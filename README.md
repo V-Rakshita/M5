@@ -1,5 +1,5 @@
-EX-21-POINTERS
-# AIM:
+# EX-21-POINTERS
+## AIM:
 Write a C program to convert a 23.65 into 25 using pointer
 
 ## ALGORITHM:
@@ -9,19 +9,23 @@ Write a C program to convert a 23.65 into 25 using pointer
 4.	Print the modified value.
 
 ## PROGRAM:
+```c
+#include <stdio.h>
+int main() 
+{
+    double f = 23.65;
+    double *ptr;
+    ptr = &f;
+    printf("Before modifying: %.2f\n",*ptr);
+    *ptr = 25.0;
+    printf("After modifying: %.2f",*ptr);
+    return 0;
+}
+```
 
 ## OUTPUT:
  	
-
-
-
-
-
-
-
-
-
-
+![Screenshot_2-5-2025_93431_www programiz com](https://github.com/user-attachments/assets/fef75bec-8d88-476e-bde6-169f9bdd9027)
 
 ## RESULT:
 Thus the program to convert a 23.65 into 25 using pointer has been executed successfully.
