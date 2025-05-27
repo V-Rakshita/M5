@@ -49,7 +49,29 @@ Write a C program to calculate the Product of first 12 natural numbers using Rec
 6.	Print the result, indicating it is the product of the first 12 natural numbers.
 
 ## PROGRAM:
+
+```
+#include <stdio.h>
+unsigned long long prod(int n) {
+    if (n <= 1)
+        return 1;
+    return n * prod(n - 1);
+}
+int main() {
+    int n;
+    unsigned long long product;
+    n = 12;
+    product = prod(n);
+
+    printf("The product of the first 12 natural numbers is: %llu\n", product);
+    return 0;
+}
+```
+
 ## OUTPUT:
+
+![image](https://github.com/user-attachments/assets/95febb37-7372-4c62-93b4-988e3623c045)
+
          		
 ## RESULT:
 
