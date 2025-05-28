@@ -50,7 +50,7 @@ Write a C program to calculate the Product of first 12 natural numbers using Rec
 
 ## PROGRAM:
 
-```
+```c
 #include <stdio.h>
 unsigned long long prod(int n) {
     if (n <= 1)
@@ -95,16 +95,34 @@ Write C Program to find Sum of each row of a Matrix
 
 ## PROGRAM:
 
-
+```c
+#include <stdio.h>
+int main()
+{
+    int arr[2][3] = {{1,2,3},{4,5,6}};
+    int sum=0,i,j;
+    for (i=0;i<2;i++)
+    {
+        sum = 0;
+        for (j=0;j<=2;j++)
+        {
+            sum = sum + arr[i][j];
+        }
+        printf("Sum of row %d is %d\n",i+1,sum);
+    }
+}
+```
 
 ## OUTPUT
 
-
- 
- 
+![image](https://github.com/user-attachments/assets/dbab7c5e-7893-424e-af11-0867607076bc)
 
  ## RESULT
- 
+Thus the program has been executed successfully.
+
+
+
+
 
 
 # EX-24-STRINGS
@@ -159,9 +177,31 @@ Step 6: End the program.
 
 ## PROGRAM
 
+```c
+#include <stdio.h>
+int main()
+{
+    int i,n,arr[10],*parr;
+    parr = arr;
+    printf("Enter the number of elements:");
+    scanf("%d",&n);
+    for (i=0;i<n;i++)
+    {
+        printf("Enter a value:");
+        scanf("%d",(parr+i));
+    }
+    printf("Elements are:\n");
+    for (i=0;i<n;i++)
+    {
+        printf("%d\n",*(parr+i));
+    }
+}
+```
+
 ## OUTPUT
 
- 
+ ![image](https://github.com/user-attachments/assets/43cfadce-e25a-42e9-9d27-b8921c960d45)
+
 
 ## RESULT
 
